@@ -60,7 +60,7 @@ final class CanvasViewModel: ObservableObject {
     //MARK: Share Photo With Friends
     func sharePhoto() {
         if let image = image {
-            let result = ImageProcessingService().generateCombinedImage(image: image, canvasView: canvasView, rotationAngle: rotationAngle, texts: texts)
+            let result = ImageProcessingService().generateCombinedImage(image: image, canvasView: canvasView, rotationAngle: rotationAngle)
             ShareService().shareImage(image: result)
         }
         
@@ -70,7 +70,7 @@ final class CanvasViewModel: ObservableObject {
     //MARK: Save Image Into Gallery
     func saveImage() {
         if let image = image {
-            let result = ImageProcessingService().generateCombinedImage(image: image, canvasView: canvasView, rotationAngle: rotationAngle, texts: texts)
+            let result = ImageProcessingService().generateCombinedImage(image: image, canvasView: canvasView, rotationAngle: rotationAngle)
             SaveService().saveImageToGallery(image: result)
         }
     }

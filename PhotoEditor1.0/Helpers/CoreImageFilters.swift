@@ -79,7 +79,7 @@ final class CoreImageFilters {
         return nil
     }
     
-    // Функция для цветокоррекции
+ 
     func applyColorCorrection(to image: UIImage, correctionType: ColorCorrectionType) -> UIImage? {
         guard let inputImage = image.ciImage ?? CIImage(image: image) else { return nil }
         
