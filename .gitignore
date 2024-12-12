@@ -1,0 +1,18 @@
+# macOS and Xcode specific
+.DS_Store
+*.xcuserdata
+*.xcworkspace
+*.xcuserstate
+DerivedData/
+build/
+Pods/
+
+# Swift Package Manager
+/.build
+/Packages
+
+# Logs
+*.log
+
+# Environment variables
+.env

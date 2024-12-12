@@ -1,0 +1,36 @@
+--- Helpers
+-AuthErrorHandler - обработка ошибок firebase 
+-CoreImageFilters - filters CoreImage
+-GenerateCombinedImage - склейка изображения
+-ImagePicker - Добавить фото 
+
+--- Models
+-GoogleSignInResult - google tokens 
+-TextModel - Модель для добавления текста на image
+
+-- Services
+-AuthService - Обработка запросов firebase 
+-SaveService - сохранение фото 
+-ShareService - поделиться фото
+
+-- Utillites
+-TopViewControllerFinder - Поиск верх. контроллера 
+
+-- ViewModel
+-AuthViewModel - вью модель аутентификации 
+-CanvasViewModel - вью модель редактора 
+
+--- Views 
+--Components
+-AddText - добавление текста на image
+-CanvasView - Холст рисования 
+-CustomTextField - форма входа 
+-CustomToolBar - фильтр бар в редакторе. 
+-FilterMenu - Меню применения фильтров на фото
+-PassResetView - модальное окно ресета пароля 
+
+LogInView - вход/регистрация (основное меню)
+PhotoEditorView - редактор/обработка изображения
+ZoomableCanvasView - контроллер canvasViews
+
+
